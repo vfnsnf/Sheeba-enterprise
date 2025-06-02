@@ -369,7 +369,7 @@ class ProductFilter {
         }
     }
 }
-
+/*
 // ===== FORM HANDLING =====
 class FormHandler {
     constructor() {
@@ -527,7 +527,7 @@ class FormHandler {
         cacheManager.removeCache(`formData_${formId}`);
     }
 }
-
+*/
 // ===== PERFORMANCE OPTIMIZATION =====
 class PerformanceOptimizer {
     constructor() {
@@ -739,68 +739,7 @@ class SearchManager {
         }
     }
 }
-
-// ===== NEWSLETTER MANAGER =====
-class NewsletterManager {
-    constructor() {
-        this.newsletterForms = document.querySelectorAll('.footer__newsletter');
-        this.init();
-    }
-
-    init() {
-        this.bindEvents();
-    }
-
-    bindEvents() {
-        this.newsletterForms.forEach(form => {
-            form.addEventListener('submit', (e) => {
-                e.preventDefault();
-                this.handleSubscription(form);
-            });
-        });
-    }
-
-    handleSubscription(form) {
-        const email = form.querySelector('input[type="email"]').value;
-        
-        if (!this.isValidEmail(email)) {
-            this.showMessage(form, 'Please enter a valid email address', 'error');
-            return;
-        }
-
-        // Check if already subscribed
-        const subscribers = cacheManager.getCache('subscribers') || [];
-        if (subscribers.includes(email)) {
-            this.showMessage(form, 'You are already subscribed!', 'info');
-            return;
-        }
-
-        // Add to subscribers
-        subscribers.push(email);
-        cacheManager.setCache('subscribers', subscribers);
-
-        this.showMessage(form, 'Successfully subscribed to our newsletter!', 'success');
-        form.reset();
-    }
-
-    isValidEmail(email) {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailRegex.test(email);
-    }
-
-    showMessage(form, message, type) {
-        const messageElement = document.createElement('div');
-        messageElement.className = `newsletter-message newsletter-message--${type}`;
-        messageElement.textContent = message;
-        
-        form.appendChild(messageElement);
-        
-        setTimeout(() => {
-            messageElement.remove();
-        }, 3000);
-    }
-}
-
+/*
 // ===== ANALYTICS TRACKER =====
 class AnalyticsTracker {
     constructor() {
@@ -884,7 +823,7 @@ class AnalyticsTracker {
         });
     }
 }
-
+*/
 // ===== MAIN INITIALIZATION =====
 class SheebaEnterpriseApp {
     constructor() {
@@ -908,11 +847,11 @@ class SheebaEnterpriseApp {
             new MobileNavigation();
             new ScrollEffects();
             new AnimationController();
-            new FormHandler();
+            //new FormHandler();
             new PerformanceOptimizer();
             new ThemeManager();
-            new NewsletterManager();
-            new AnalyticsTracker();
+            //new NewsletterManager();
+            //new AnalyticsTracker();
 
             // Initialize product filter only on products page
             if (document.querySelector('.filter__btn')) {
