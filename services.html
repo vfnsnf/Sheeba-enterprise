@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Sheeba Enterprise</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <a href="index.html" class="nav__logo">
+                    <i class="fas fa-leaf nav__logo-icon"></i>
+                    Sheeba Enterprise
+                </a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="services.html" class="nav__link active-link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="products.html" class="nav__link">Products</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Services Hero Section -->
+    <section class="services-hero section">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">Our Services</span>
+                <h1 class="services-hero__title">Comprehensive Plastic Solutions</h1>
+                <p class="services-hero__description">
+                    We offer a complete range of high-quality plastic services to help your business thrive while protecting the environment. From trading to waste management, we've got you covered.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Showcase -->
+    <section class="services-showcase section">
+        <div class="container">
+            <div class="services__grid">
+                <!-- Service 1: Plastic Granules Trading -->
+                <article class="service-showcase-card" data-category="trading" id="plastic-granules">
+                    <div class="service-showcase-card__image">
+                        <img src="images/services/plastic-granules.jpg" alt="Plastic Granules Trading" class="service-showcase-card__img">
+                        <div class="service-showcase-card__badge">Trading</div>
+                    </div>
+                    <div class="service-showcase-card__content">
+                        <span class="service-showcase-card__category">Core Service</span>
+                        <h3 class="service-showcase-card__title">Plastic Granules Trading</h3>
+                        <p class="service-showcase-card__description">
+                            High-quality plastic granules to meet the demands of your production lines and processes. We source premium materials from trusted suppliers to ensure consistent quality and reliability.
+                        </p>
+                        <div class="service-showcase-card__features">
+                            <span class="feature-tag">Premium Quality</span>
+                            <span class="feature-tag">Various Grades</span>
+                            <span class="feature-tag">Bulk Supply</span>
+                            <span class="feature-tag">Competitive Pricing</span>
+                        </div>
+                    <!--    <a href="#contact" class="btn btn--primary btn--small">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right btn__icon"></i>
+                        </a> 
+                    -->
+                    </div>
+                </article>
+
+                <!-- Service 2: Transportation Services -->
+                <article class="service-showcase-card" data-category="logistics" id="plastic-logistics">
+                    <div class="service-showcase-card__image">
+                        <img src="images/services/transportation.jpg" alt="Transportation Services" class="service-showcase-card__img">
+                        <div class="service-showcase-card__badge">Logistics</div>
+                    </div>
+                    <div class="service-showcase-card__content">
+                        <span class="service-showcase-card__category">Support Service</span>
+                        <h3 class="service-showcase-card__title">Transportation Services</h3>
+                        <p class="service-showcase-card__description">
+                            Efficient transportation solutions to move your plastic materials safely and reliably. Our logistics network ensures timely delivery across India with proper handling and care.
+                        </p>
+                        <div class="service-showcase-card__features">
+                            <span class="feature-tag">Safe Handling</span>
+                            <span class="feature-tag">Timely Delivery</span>
+                            <span class="feature-tag">Pan-India Network</span>
+                            <span class="feature-tag">GPS Tracking</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Service 3: Scrap Plastic Solutions -->
+                <article class="service-showcase-card" data-category="recycling" id="plastic-recycle">
+                    <div class="service-showcase-card__image">
+                        <img src="images/services/scrap-plastic.jpg" alt="Scrap Plastic Solutions" class="service-showcase-card__img">
+                        <div class="service-showcase-card__badge">Recycling</div>
+                    </div>
+                    <div class="service-showcase-card__content">
+                        <span class="service-showcase-card__category">Sustainability</span>
+                        <h3 class="service-showcase-card__title">Scrap Plastic Solutions</h3>
+                        <p class="service-showcase-card__description">
+                            Sustainable solutions for collecting, recycling, and reusing scrap plastic materials. We help businesses reduce waste and contribute to a circular economy through responsible recycling practices.
+                        </p>
+                        <div class="service-showcase-card__features">
+                            <span class="feature-tag">Eco-Friendly</span>
+                            <span class="feature-tag">Waste Reduction</span>
+                            <span class="feature-tag">Value Recovery</span>
+                            <span class="feature-tag">Certified Process</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Service 4: Waste Management -->
+                <article class="service-showcase-card" data-category="management" id="waste-management">
+                    <div class="service-showcase-card__image">
+                        <img src="images/services/waste-management.jpg" alt="Waste Management" class="service-showcase-card__img">
+                        <div class="service-showcase-card__badge">Management</div>
+                    </div>
+                    <div class="service-showcase-card__content">
+                        <span class="service-showcase-card__category">Environmental</span>
+                        <h3 class="service-showcase-card__title">Waste Management</h3>
+                        <p class="service-showcase-card__description">
+                            Comprehensive waste management services tailored for your plastic business needs. From collection to processing, we ensure environmentally responsible disposal and recycling of plastic waste.
+                        </p>
+                        <div class="service-showcase-card__features">
+                            <span class="feature-tag">Complete Solution</span>
+                            <span class="feature-tag">Compliance</span>
+                            <span class="feature-tag">Environmental Care</span>
+                            <span class="feature-tag">Regular Collection</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Service 5: Warehouse Rentals -->
+                <article class="service-showcase-card" data-category="storage" id="warehouse-rental">
+                    <div class="service-showcase-card__image">
+                        <img src="images/services/warehouse.jpg" alt="Warehouse Rentals" class="service-showcase-card__img">
+                        <div class="service-showcase-card__badge">Storage</div>
+                    </div>
+                    <div class="service-showcase-card__content">
+                        <span class="service-showcase-card__category">Infrastructure</span>
+                        <h3 class="service-showcase-card__title">Warehouse Rentals</h3>
+                        <p class="service-showcase-card__description">
+                            Affordable and secure warehouse spaces for storing plastic products and materials. Our modern facilities provide optimal storage conditions with 24/7 security and easy access.
+                        </p>
+                        <div class="service-showcase-card__features">
+                            <span class="feature-tag">Secure Storage</span>
+                            <span class="feature-tag">24/7 Security</span>
+                            <span class="feature-tag">Climate Control</span>
+                            <span class="feature-tag">Easy Access</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Service 6: Comprehensive Solutions -->
+                <article class="service-showcase-card" data-category="consulting" id="plastic-consulting">
+                    <div class="service-showcase-card__image">
+                        <img src="images/services/comprehensive-solutions.jpg" alt="Comprehensive Solutions" class="service-showcase-card__img">
+                        <div class="service-showcase-card__badge">Consulting</div>
+                    </div>
+                    <div class="service-showcase-card__content">
+                        <span class="service-showcase-card__category">Complete Package</span>
+                        <h3 class="service-showcase-card__title">Comprehensive Solutions</h3>
+                        <p class="service-showcase-card__description">
+                            End-to-end support to streamline your plastic business operations and ensure sustainability. Our expert team provides consultation, planning, and implementation of complete plastic solutions.
+                        </p>
+                        <div class="service-showcase-card__features">
+                            <span class="feature-tag">Expert Consultation</span>
+                            <span class="feature-tag">Custom Solutions</span>
+                            <span class="feature-tag">End-to-End Support</span>
+                            <span class="feature-tag">Sustainability Focus</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Our Services -->
+    <section class="services-features section" style="background: var(--section-bg);">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__subtitle">Why Choose Us</span>
+                <h2 class="section__title">Quality Service Guaranteed</h2>
+                <p class="section__description">
+                    With over 15 years of experience in the plastic industry, we deliver exceptional services that meet your business needs while maintaining the highest standards of quality and sustainability.
+                </p>
+            </div>
+
+            <div class="features__grid grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div class="feature">
+                    <div class="feature__icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="feature__content">
+                        <h3 class="feature__title">Quality Assured</h3>
+                        <p class="feature__description">All our services meet the best industrial standards with rigorous quality control and certified processes.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <div class="feature__icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <div class="feature__content">
+                        <h3 class="feature__title">Fast Delivery</h3>
+                        <p class="feature__description">Quick, eco-friendly service delivery from our facilities to your business with reliable logistics support.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <div class="feature__icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="feature__content">
+                        <h3 class="feature__title">24/7 Support</h3>
+                        <p class="feature__description">Round-the-clock customer service and technical support to ensure your operations run smoothly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services CTA -->
+    <section class="services-cta section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="services-cta__title">Ready to Get Started?</h2>
+                <p class="services-cta__description">
+                    Contact us today to discuss your plastic business needs and find the perfect services for your organization. Our expert team is ready to help you achieve your goals.
+                </p>
+                <div class="services-cta__buttons">
+                    <a href="#contact" class="btn btn--primary btn--large">
+                        <span>Get Quote</span>
+                        <i class="fas fa-arrow-right btn__icon"></i>
+                    </a>
+                    <a href="tel:+919825275825" class="btn btn--secondary btn--large">
+                        <span>Call Now</span>
+                        <i class="fas fa-phone btn__icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__content">
+                    <div class="footer__section">
+                        <div class="footer__brand">
+                            <a href="#" class="footer__logo">
+                                <i class="fas fa-leaf footer__logo-icon"></i>
+                                Sheeba Enterprise
+                            </a>
+                            <p class="footer__description">
+                                Leading the way in sustainable business solutions.
+                                Building a greener future, one business at a time.
+                            </p>
+                            <div class="footer__social">
+                                <a href="#" class="footer__social-link" aria-label="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="footer__social-link" aria-label="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="footer__social-link" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer__section">
+                        <h4 class="footer__title">Quick Links</h4>
+                        <ul class="footer__links">
+                            <li><a href="#home" class="footer__link">Home</a></li>
+                            <li><a href="#about" class="footer__link">About Us</a></li>
+                            <li><a href="#services" class="footer__link">Services</a></li>
+                            <li><a href="products.html" class="footer__link">Products</a></li>
+                            <li><a href="#contact" class="footer__link">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__section">
+                        <h4 class="footer__title">Services</h4>
+                        <ul class="footer__links">
+                            <li><a href="#" class="footer__link">Plastic Granules Trading</a></li>
+                            <li><a href="#" class="footer__link">Transportation Services</a></li>
+                            <li><a href="#" class="footer__link">Scrap Plastic Solutions</a></li>
+                            <li><a href="#" class="footer__link">Waste Management</a></li>
+                            <li><a href="#" class="footer__link">Warehouse Rentals</a></li>
+                            <li><a href="#" class="footer__link">Comprehensive Solutions</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__bottom">
+                    <div class="footer__bottom-content">
+                        <p class="footer__copyright">
+                            &copy; 2025 Sheeba Enterprise. All rights reserved.
+                        </p>
+                        <div class="footer__bottom-links">
+                            <a href="#" class="footer__bottom-link">Privacy Policy</a>
+                            <a href="#" class="footer__bottom-link">Terms of Service</a>
+                            <a href="#" class="footer__bottom-link">Cookie Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

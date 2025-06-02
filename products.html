@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Sheeba Enterprise's comprehensive range of sustainable and eco-friendly products. Solar panels, LED lighting, biodegradable packaging, and more.">
+    <meta name="keywords" content="sustainable products, eco-friendly products, solar panels, LED lighting, biodegradable packaging, green technology">
+    <meta name="author" content="Sheeba Enterprise">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Products - Sheeba Enterprise">
+    <meta property="og:description" content="Explore our comprehensive range of sustainable and eco-friendly products for your business needs.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sheebaenterprise.com/products">
+    <meta property="og:image" content="https://sheebaenterprise.com/images/products-og.jpg">
+    
+    <title>Products - Sheeba Enterprise</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data for Products -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Sheeba Enterprise Products",
+      "description": "Sustainable and eco-friendly products for businesses",
+      "itemListElement": [
+        {
+          "@type": "Product",
+          "name": "Platic Granule Plastic Dana",
+          "description": "",
+
+        },
+        {
+          "@type": "Product",
+          "name": "Biodegradable Packaging",
+          "description": "Sustainable packaging solutions for all your shipping needs",
+          "offers": {
+            "@type": "Offer",
+            "price": "89",
+            "priceCurrency": "USD"
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <a href="index.html" class="nav__logo">
+                    <i class="fas fa-leaf nav__logo-icon"></i>
+                    Sheeba Enterprise
+                </a>
+            </div>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#services" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="products.html" class="nav__link active-link">Products</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Products Hero Section -->
+        <section class="products-hero section">
+            <div class="container">
+                <div class="products-hero__content" data-aos="fade-up">
+                    <h1 class="products-hero__title">
+                        Our <span class="text-gradient">Product</span> Collection
+                    </h1>
+                    <p class="products-hero__description">
+                        Discover our comprehensive range of eco-friendly products designed to help your business 
+                        reduce its environmental impact while improving efficiency.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Showcase -->
+        <section class="products-showcase section">
+            <div class="container">
+                <!-- Product Categories Filter -->
+                <div class="categories__filter" data-aos="fade-up">
+                    <button class="filter__btn filter__btn--active" data-filter="all">All Products</button>
+                    <button class="filter__btn" data-filter="energy">Energy Solutions</button>
+                    <button class="filter__btn" data-filter="packaging">Packaging</button>
+                    <button class="filter__btn" data-filter="lighting">Lighting</button>
+                    <button class="filter__btn" data-filter="water">Water Solutions</button>
+                </div>
+                
+                <!-- Products Grid -->
+                <div class="products__grid">
+                    <!-- Solar Panel Kit -->
+                    <div class="product-showcase-card" data-category="energy" data-aos="fade-up" data-aos-delay="100">
+                        <div class="product-showcase-card__image">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop&crop=center" 
+                                 alt="Solar Panel Kit - Complete renewable energy solution" 
+                                 class="product-showcase-card__img">
+                            <div class="product-showcase-card__badge">Best Seller</div>
+                        </div>
+                        <div class="product-showcase-card__content">
+                            <div class="product-showcase-card__category">Energy Solutions</div>
+                            <h3 class="product-showcase-card__title">Solar Panel Kit</h3>
+                            <p class="product-showcase-card__description">
+                                Complete solar energy solution for small to medium businesses. 
+                                Includes panels, inverter, and installation guide.
+                            </p>
+                            <div class="product-showcase-card__features">
+                                <span class="feature-tag">5kW Capacity</span>
+                                <span class="feature-tag">25 Year Warranty</span>
+                                <span class="feature-tag">Easy Install</span>
+                            </div>
+                            <div class="product-showcase-card__price">
+                                <span class="price-current">$2,499</span>
+                                <span class="price-old">$2,999</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Wind Turbine System -->
+                    <div class="product-showcase-card" data-category="energy" data-aos="fade-up" data-aos-delay="200">
+                        <div class="product-showcase-card__image">
+                            <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=400&h=300&fit=crop&crop=center" 
+                                 alt="Wind Turbine System - Small scale wind energy" 
+                                 class="product-showcase-card__img">
+                            <div class="product-showcase-card__badge">New</div>
+                        </div>
+                        <div class="product-showcase-card__content">
+                            <div class="product-showcase-card__category">Energy Solutions</div>
+                            <h3 class="product-showcase-card__title">Wind Turbine System</h3>
+                            <p class="product-showcase-card__description">
+                                Compact wind energy system perfect for businesses in windy locations. 
+                                Low maintenance and high efficiency.
+                            </p>
+                            <div class="product-showcase-card__features">
+                                <span class="feature-tag">3kW Output</span>
+                                <span class="feature-tag">Low Noise</span>
+                                <span class="feature-tag">Weather Resistant</span>
+                            </div>
+                            <div class="product-showcase-card__price">
+                                <span class="price-current">$3,299</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Biodegradable Packaging -->
+                    <div class="product-showcase-card" data-category="packaging" data-aos="fade-up" data-aos-delay="300">
+                        <div class="product-showcase-card__image">
+                            <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=400&h=300&fit=crop&crop=center" 
+                                 alt="Biodegradable Packaging - Eco-friendly shipping materials" 
+                                 class="product-showcase-card__img">
+                            <div class="product-showcase-card__badge">Eco Choice</div>
+                        </div>
+                        <div class="product-showcase-card__content">
+                            <div class="product-showcase-card__category">Packaging</div>
+                            <h3 class="product-showcase-card__title">Biodegradable Packaging</h3>
+                            <p class="product-showcase-card__description">
+                                Sustainable packaging solutions for all your shipping needs. 
+                                Compostable and plastic-free materials.
+                            </p>
+                            <div class="product-showcase-card__features">
+                                <span class="feature-tag">100% Compostable</span>
+                                <span class="feature-tag">Various Sizes</span>
+                                <span class="feature-tag">Strong & Durable</span>
+                            </div>
+                            <div class="product-showcase-card__price">
+                                <span class="price-current">$89</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Recycled Paper Bags -->
+                    <div class="product-showcase-card" data-category="packaging" data-aos="fade-up" data-aos-delay="400">
+                        <div class="product-showcase-card__image">
+                            <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=300&fit=crop&crop=center" 
+                                 alt="Recycled Paper Bags - Sustainable shopping bags" 
+                                 class="product-showcase-card__img">
+                        </div>
+                        <div class="product-showcase-card__content">
+                            <div class="product-showcase-card__category">Packaging</div>
+                            <h3 class="product-showcase-card__title">Recycled Paper Bags</h3>
+                            <p class="product-showcase-card__description">
+                                High-quality paper bags made from 100% recycled materials. 
+                                Perfect for retail and promotional use.
+                            </p>
+                            <div class="product-showcase-card__features">
+                                <span class="feature-tag">100% Recycled</span>
+                                <span class="feature-tag">Custom Printing</span>
+                                <span class="feature-tag">Bulk Orders</span>
+                            </div>
+                            <div class="product-showcase-card__price">
+                                <span class="price-current">$45</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- LED Lighting System -->
+                    <div class="product-showcase-card" data-category="lighting" data-aos="fade-up" data-aos-delay="500">
+                        <div class="product-showcase-card__image">
+                            <img src="https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=400&h=300&fit=crop&crop=center" 
+                                 alt="LED Lighting System - Energy efficient commercial lighting" 
+                                 class="product-showcase-card__img">
+                            <div class="product-showcase-card__badge">Energy Star</div>
+                        </div>
+                        <div class="product-showcase-card__content">
+                            <div class="product-showcase-card__category">Lighting</div>
+                            <h3 class="product-showcase-card__title">LED Lighting System</h3>
+                            <p class="product-showcase-card__description">
+                                Energy-efficient LED lighting for commercial spaces. 
+                                Reduces energy consumption by up to 80%.
+                            </p>
+                            <div class="product-showcase-card__features">
+                                <span class="feature-tag">80% Energy Savings</span>
+                                <span class="feature-tag">50,000 Hours</span>
+                                <span class="feature-tag">Dimmable</span>
+                            </div>
+                            <div class="product-showcase-card__price">
+                                <span class="price-current">$299</span>
+                                <span class="price-old">$399</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Smart Lighting Controller -->
+                    <div class="product-showcase-card" data-category="lighting" data-aos="fade-up" data-aos-delay="600">
+                        <div class="product-showcase-card__image">
+                            <img src="https://images.unsplash.com/photo-1524484485831-a92ffc0de03f?w=400&h=300&fit=crop&crop=center" 
+                                 alt="Smart Lighting Controller - Automated lighting management" 
+                                 class="product-showcase-card__img">
+                            <div class="product-showcase-card__badge">Smart Tech</div>
+                        </div>
+                        <div class="product-showcase-card__content">
+                            <div class="product-showcase-card__category">Lighting</div>
+                            <h3 class="product-showcase-card__title">Smart Lighting Controller</h3>
+                            <p class="product-showcase-card__description">
+                                Intelligent lighting control system with motion sensors and scheduling. 
+                                Optimize energy usage automatically.
+                            </p>
+                            <div class="product-showcase-card__features">
+                                <span class="feature-tag">Motion Sensors</span>
+                                <span class="feature-tag">App Control</span>
+                                <span class="feature-tag">Energy Analytics</span>
+                            </div>
+                            <div class="product-showcase-card__price">
+                                <span class="price-current">$199</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Water Filtration System -->
+                    <div class="product-showcase-card" data-category="water" data-aos="fade-up" data-aos-delay="700">
+                        <div class="product-showcase-card__image">
+                            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=300&fit=crop&crop=center" 
+                                 alt="Water Filtration System - Commercial water purification" 
+                                 class="product-showcase-card__img">
+                            <div class="product-showcase-card__badge">Premium</div>
+                        </div>
+                        <div class="product-showcase-card__content">
+                            <div class="product-showcase-card__category">Water Solutions</div>
+                            <h3 class="product-showcase-card__title">Water Filtration System</h3>
+                            <p class="product-showcase-card__description">
+                                Advanced water filtration system for commercial use. 
+                                Removes 99.9% of contaminants and reduces plastic waste.
+                            </p>
+                            <div class="product-showcase-card__features">
+                                <span class="feature-tag">99.9% Pure</span>
+                                <span class="feature-tag">High Capacity</span>
+                                <span class="feature-tag">Low Maintenance</span>
+                            </div>
+                            <div class="product-showcase-card__price">
+                                <span class="price-current">$1,299</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Rainwater Harvesting Kit -->
+                    <div class="product-showcase-card" data-category="water" data-aos="fade-up" data-aos-delay="800">
+                        <div class="product-showcase-card__image">
+                            <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&h=300&fit=crop&crop=center" 
+                                 alt="Rainwater Harvesting Kit - Sustainable water collection" 
+                                 class="product-showcase-card__img">
+                            <div class="product-showcase-card__badge">Eco Friendly</div>
+                        </div>
+                        <div class="product-showcase-card__content">
+                            <div class="product-showcase-card__category">Water Solutions</div>
+                            <h3 class="product-showcase-card__title">Rainwater Harvesting Kit</h3>
+                            <p class="product-showcase-card__description">
+                                Complete rainwater collection and storage system. 
+                                Reduce water bills and support sustainability.
+                            </p>
+                            <div class="product-showcase-card__features">
+                                <span class="feature-tag">500L Capacity</span>
+                                <span class="feature-tag">UV Resistant</span>
+                                <span class="feature-tag">Easy Setup</span>
+                            </div>
+                            <div class="product-showcase-card__price">
+                                <span class="price-current">$599</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Energy Storage Battery -->
+                    <div class="product-showcase-card" data-category="energy" data-aos="fade-up" data-aos-delay="900">
+                        <div class="product-showcase-card__image">
+                            <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=400&h=300&fit=crop&crop=center" 
+                                 alt="Energy Storage Battery - Renewable energy storage solution" 
+                                 class="product-showcase-card__img">
+                            <div class="product-showcase-card__badge">High Capacity</div>
+                        </div>
+                        <div class="product-showcase-card__content">
+                            <div class="product-showcase-card__category">Energy Solutions</div>
+                            <h3 class="product-showcase-card__title">Energy Storage Battery</h3>
+                            <p class="product-showcase-card__description">
+                                High-capacity lithium battery system for storing renewable energy. 
+                                Perfect complement to solar and wind systems.
+                            </p>
+                            <div class="product-showcase-card__features">
+                                <span class="feature-tag">10kWh Capacity</span>
+                                <span class="feature-tag">10 Year Warranty</span>
+                                <span class="feature-tag">Smart Monitoring</span>
+                            </div>
+                            <div class="product-showcase-card__price">
+                                <span class="price-current">$4,999</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="products-cta section">
+            <div class="container">
+                <div class="products-cta__content" data-aos="fade-up">
+                    <h2 class="products-cta__title">Ready to Go Green?</h2>
+                    <p class="products-cta__description">
+                        Contact us today to discuss your sustainable business needs and find the perfect products for your organization.
+                    </p>
+                    <div class="products-cta__buttons">
+                        <a href="index.html#contact" class="btn btn--primary btn--large">
+                            Get Quote
+                            <i class="fas fa-arrow-right btn__icon"></i>
+                        </a>
+                        <a href="tel:+1234567890" class="btn btn--secondary btn--large">
+                            <i class="fas fa-phone btn__icon"></i>
+                            Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__content">
+                    <div class="footer__section">
+                        <div class="footer__brand">
+                            <a href="#" class="footer__logo">
+                                <i class="fas fa-leaf footer__logo-icon"></i>
+                                Sheeba Enterprise
+                            </a>
+                            <p class="footer__description">
+                                Leading the way in sustainable business solutions.
+                                Building a greener future, one business at a time.
+                            </p>
+                            <div class="footer__social">
+                                <a href="#" class="footer__social-link" aria-label="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="footer__social-link" aria-label="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="footer__social-link" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer__section">
+                        <h4 class="footer__title">Quick Links</h4>
+                        <ul class="footer__links">
+                            <li><a href="#home" class="footer__link">Home</a></li>
+                            <li><a href="#about" class="footer__link">About Us</a></li>
+                            <li><a href="#services" class="footer__link">Services</a></li>
+                            <li><a href="products.html" class="footer__link">Products</a></li>
+                            <li><a href="#contact" class="footer__link">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__section">
+                        <h4 class="footer__title">Services</h4>
+                        <ul class="footer__links">
+                            <li><a href="#" class="footer__link">Plastic Granules Trading</a></li>
+                            <li><a href="#" class="footer__link">Transportation Services</a></li>
+                            <li><a href="#" class="footer__link">Scrap Plastic Solutions</a></li>
+                            <li><a href="#" class="footer__link">Waste Management</a></li>
+                            <li><a href="#" class="footer__link">Warehouse Rentals</a></li>
+                            <li><a href="#" class="footer__link">Comprehensive Solutions</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__bottom">
+                    <div class="footer__bottom-content">
+                        <p class="footer__copyright">
+                            &copy; 2025 Sheeba Enterprise. All rights reserved.
+                        </p>
+                        <div class="footer__bottom-links">
+                            <a href="#" class="footer__bottom-link">Privacy Policy</a>
+                            <a href="#" class="footer__bottom-link">Terms of Service</a>
+                            <a href="#" class="footer__bottom-link">Cookie Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
