@@ -757,38 +757,41 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+
   .hero-container {
     padding: 0 1rem;
   }
-  
+
   .title-main {
     font-size: 2rem;
   }
-  
+
   .title-sub {
     font-size: 1.125rem;
   }
-  
+
   .hero-stats {
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .stat-item {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
   }
-  
+
   .stat-number {
     font-size: 1.5rem;
   }
-  
+
   .hero-image {
-    height: 250px;
-    border-radius: 15px;
+    display: none; /* Hide the image on small screens */
+    /* height: 250px;
+    border-radius: 15px;*/
   }
+
 }
 
 /* ===== PARALLAX EFFECT ===== */
@@ -2321,4 +2324,49 @@ body {
         width: 100%;
         max-width: 280px;
     }
+}
+
+/* wave background */
+/* Base styles for wave background */
+.wave-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  background-size: 200% 100%;
+  opacity: 0.3;
+  z-index: -1;
+  transform: translateX(0);
+  animation: waveMove 6s ease-in-out infinite;
+}
+
+/* Keyframes for smooth horizontal wave movement */
+@keyframes waveMove {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Media query: apply wave animation only on small screens (phones) */
+@media screen and (max-width: 480px) {
+  .hero-container {
+    position: relative; /* Ensure relative positioning for absolute wave */
+    overflow: hidden; /* Hide overflow */
+  }
+
+  .wave-background {
+    display: block;
+  }
+}
+
+/* Hide wave background on larger screens */
+@media screen and (min-width: 481px) {
+  .wave-background {
+    display: none;
+  }
 }
